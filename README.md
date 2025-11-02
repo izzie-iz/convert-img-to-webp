@@ -39,8 +39,7 @@ pip install -r requirements.txt
 
 ### Basic Usage
 
-1. Place your PNG or JPEG files in the `png files` folder (or modify the `input_folder` variable in `main.py`)
-
+1. Place your PNG or JPEG files in the `png files` folder.
 2. Run the converter:
 ```bash
 python main.py
