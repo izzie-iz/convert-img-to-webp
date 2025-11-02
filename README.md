@@ -37,40 +37,14 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Basic Usage
+1. Place your PNG or JPEG files in the `png files` folder (or modify the `input_folder` variable in `main.py`)
 
-1. Place your PNG or JPEG files in the `png files` folder.
 2. Run the converter:
 ```bash
 python main.py
 ```
 
 3. Converted WebP files will be saved in the `webp files` folder
-
-### Custom Usage
-
-You can use the converter as a module in your own Python scripts:
-
-```python
-from main import convert_png_to_webp
-
-# Convert images with custom settings
-successful, errors = convert_png_to_webp(
-    input_folder="path/to/input",
-    output_folder="path/to/output",
-    quality=85
-)
-
-print(f"Converted {successful} images")
-```
-
-### Parameters
-
-- `input_folder`: Path to the folder containing your PNG/JPEG files
-- `output_folder`: Path where converted WebP files will be saved
-- `quality`: WebP quality setting (0-100, default: 80)
-  - Higher values = better quality but larger file size
-  - Lower values = smaller file size but reduced quality
 
 ## Supported Formats
 
@@ -91,32 +65,6 @@ WebP is a modern image format that provides superior compression for images on t
 - **Transparency support**: Like PNG, but with better compression
 - **Wide browser support**: Supported by all modern browsers
 
-## Example Output
-
-```
-============================================================
-PNG/JPEG to WebP Converter
-============================================================
-Input folder: png files
-Output folder: webp files
-Quality: 80
-============================================================
-
-Found 5 image file(s) to convert...
-
-✓ Converted: image1.png → image1.webp
-✓ Converted: image2.png → image2.webp
-✓ Converted: photo.jpg → photo.webp
-✓ Converted: graphic.PNG → graphic.webp
-✓ Converted: picture.jpeg → picture.webp
-
-============================================================
-Conversion Summary
-============================================================
-Successfully converted: 5 file(s)
-No errors encountered!
-============================================================
-```
 
 ## Project Structure
 
@@ -129,22 +77,6 @@ convert-img-to-webp/
 ├── png files/          # Input folder (create this)
 └── webp files/         # Output folder (auto-created)
 ```
-
-## Contributing
-
-Contributions are welcome! Feel free to:
-
-- Report bugs
-- Suggest new features
-- Submit pull requests
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Author
-
-Created by [izzie-iz](https://github.com/izzie-iz)
 
 ## Acknowledgments
 
